@@ -1,0 +1,27 @@
+body {
+    background-color: #060a1c;
+    color: #ffffff;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+}
+
+header {
+    display: flex;
+
+    /* background-color: #000000; */
+}
+
+header div {
+    /* width: 40%; */
+    white-space: nowrap;
+    /* background-color: #111111; */
+}
+
+header span {
+    color: #8c4040;
+}
+
+nav {
+    text-align: right;
+    /* background-color: #111111; */
+    width: 100%;
+}
