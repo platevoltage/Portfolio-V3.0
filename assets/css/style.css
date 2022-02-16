@@ -1,17 +1,29 @@
+:root {
+    --bgcolor: #060a1c;
+    --maincolor: #bababa;
+    --accentcolor: #8c4040;
+}
+
+
 body {
-    background-color: #060a1c;
-    color: #bababa;
+    position: relative;
+    background-color: var(--bgcolor);
+    color: var(--maincolor);
     font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    font-weight: 200;
 }
 
 header {
+    position: fixed;
     display: flex;
-    
-
+    /* position: fixed;          */
+    width: 100%;
     /* background-color: #000000; */
+    z-index: 1;
 }
 
 header div {
+    /* position: fixed; */
     padding: 10px;
 
     /* width: 40%; */
@@ -26,11 +38,13 @@ header span {
 }
 
 nav {
+    position: absolute;
     padding: 20px;
     font-family: "Courier" ;
-    text-align: right;
+    /* text-align: right; */
+    right: 0;
     /* background-color: #111111; */
-    width: 100%;
+    /* width: 100vw; */
     /* font-weight: 200; */
 }
 aside {
@@ -50,8 +64,8 @@ aside section{
     margin-left: 16px;
     /* background-color: #999999; */
     border-style: solid;
-    border-width: 2px ;
-    border-color: #8c4040;
+    border-width: 1px ;
+    border-color: var(--accentcolor);
     border-radius: 6px;
 }
 aside i {
@@ -60,9 +74,39 @@ aside i {
 
 .v-stripe {
     position: relative;
-    border-width: 1px ;
+    border-width: .5px ;
     width: 0px;
     height: 1000px;
-    left: 18px;
+    left: 32%;
    
 }
+
+main {
+    position: absolute;
+   
+    /* background-color: #44444444; */
+    width: 90%;
+    margin-top: 100px;
+    margin-left: 100px;
+    height: 200vh;
+}
+
+main img {
+    margin-left: 200px;
+    width: 500px;
+    border-style: solid;
+    /* border-width: 10px; */
+    border-color: var(--bgcolor);
+    border-radius: 3px;
+    box-shadow: 11px 7px 0 var(--bgcolor), 12px 8px var(--accentcolor) ;
+}
+main p {
+    margin-left: 180px;
+    width: 540px;
+}
+
+h1 {
+    margin-left: 160px;
+    font-weight: 200;
+}
+
