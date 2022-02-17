@@ -1,6 +1,6 @@
 :root {
     --bgcolor: #060a1c;
-    --bgcolortransparent: #060a1cef;
+    --bgcolortransparent: #060a1cdd;
     --maincolor: #bababa;
     --accentcolor: #8c4040;
 }
@@ -9,6 +9,7 @@
 } */
 
 body {
+    margin: 0;
     position: relative;
     background-color: var(--bgcolor);
     color: var(--maincolor);
@@ -27,7 +28,9 @@ header {
     background-color: var(--bgcolortransparent);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    box-shadow: 0 0 5px 5px var(--bgcolortransparent);
+    /* box-shadow: 0px 0px 10px #000000; */
+    box-shadow: 1px 1px 0px var(--accentcolor);
+
     z-index: 1;
 }
 

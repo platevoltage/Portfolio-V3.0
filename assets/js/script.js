@@ -10,6 +10,8 @@ links.style.top = "100vh";
 header.style.top = "-40px";
 links.style.transition = null;
 header.style.transition = "all 2s";
+header.style.boxShadow = "none";
+header.style.backgroundColor = "#00000000";
 
 
 setTimeout(function() {
@@ -26,7 +28,9 @@ function moveHeader() {
     let height = 45 - window.scrollY/200;
     if(window.scrollY > furthestDown) {
         furthestDown = window.scrollY;
-        header.style.top = "-60px";
+        header.style.top = "-62px";
+        header.style.boxShadow = null;
+        header.style.backgroundColor = null;
     }
     if(window.scrollY < furthestDown-100) {
         furthestDown = window.scrollY;
@@ -36,6 +40,8 @@ function moveHeader() {
     links.style.top = `${height}vh`;
     if (window.scrollY < 60) {
         header.style.top = null;
+        header.style.boxShadow = "none";
+        header.style.backgroundColor = "#00000000";
     }
     // else {
     //     header.style.top = null;
