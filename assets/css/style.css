@@ -1,11 +1,12 @@
 :root {
     --bgcolor: #060a1c;
+    --bgcolortransparent: #060a1cef;
     --maincolor: #bababa;
     --accentcolor: #8c4040;
 }
-* {
+/* * {
     
-}
+} */
 
 body {
     position: relative;
@@ -22,7 +23,11 @@ header {
     top: 0px;
     /* position: fixed;          */
     width: 100%;
-    /* background-color: #000000; */
+    height: 60px;
+    background-color: var(--bgcolortransparent);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 0 5px 5px var(--bgcolortransparent);
     z-index: 1;
 }
 
@@ -52,6 +57,7 @@ nav {
     /* font-weight: 200; */
 }
 aside {
+    transition: all 0.5s;
     position: fixed;
     top: 45vh;
     display: flex;
