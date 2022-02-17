@@ -2,6 +2,7 @@ const header = document.getElementsByTagName("header")[0];
 const links = document.getElementById("left");
 const about = document.getElementById("about");
 const projects = document.getElementById("projects");
+const projectsAnchor = document.getElementById("projects-anchor");
 
 
 
@@ -14,6 +15,7 @@ links.style.transition = null;
 header.style.transition = "all 2s";
 header.style.boxShadow = "none";
 header.style.backgroundColor = "#00000000";
+header.style.border = "none";
 
 
 setTimeout(function() {
@@ -30,9 +32,10 @@ function moveHeader() {
     let height = 45 - window.scrollY/200;
     if(window.scrollY > furthestDown) {
         furthestDown = window.scrollY;
-        header.style.top = "-62px";
+        header.style.top = "-60px";
         header.style.boxShadow = null;
         header.style.backgroundColor = null;
+        header.style.border = null;
     }
     if(window.scrollY < furthestDown-100) {
         furthestDown = window.scrollY;
@@ -41,19 +44,24 @@ function moveHeader() {
     // console.log(projects.offsetTop, window.scrollY);
     links.style.top = `${height}vh`;
     if (window.scrollY < 60) {
-        header.style.top = null;
+        
         header.style.boxShadow = "none";
         header.style.backgroundColor = "#00000000";
+        header.style.border = "none";
+    }
+    if (window.scrollY < 140) {
+        header.style.top = null;
     }
     // else {
     //     header.style.top = null;
     // }
-    if (projects.offsetTop-window.innerHeight/4 <= window.scrollY) {
+    if (projectsAnchor.offsetTop-window.innerHeight/4 <= window.scrollY) {
         console.log("project");
         about.style.marginTop = "-100px";
     }
     else {
         about.style.marginTop = null;
+    
     }
     
 }

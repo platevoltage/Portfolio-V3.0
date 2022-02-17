@@ -3,6 +3,7 @@
     --bgcolortransparent: #060a1cdd;
     --maincolor: #bababa;
     --accentcolor: #8c4040;
+    --shadowcolor: #03050c;
 }
 /* * {
     
@@ -26,12 +27,17 @@ header {
     width: 100%;
     height: 60px;
     background-color: var(--bgcolortransparent);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    /* box-shadow: 0px 0px 10px #000000; */
-    box-shadow: 1px 1px 0px var(--accentcolor);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    /* border: 1px solid 1px 1px var(--accentcolor); */
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: var(--accentcolor);
 
-    z-index: 1;
+    box-shadow:  10px 10px 10px var(--shadowcolor);
+
+
+    z-index: 10;
 }
 
 header div {
@@ -45,7 +51,7 @@ header div {
 }
 
 span {
-    color: #8c4040;
+    color: var(--accentcolor);
     
 }
 
@@ -101,6 +107,7 @@ a:hover {
     border-width: 1px ;
     border-color: var(--accentcolor);
     border-radius: 6px;
+    box-shadow:  10px 10px 10px var(--shadowcolor);
 }
 aside a {
     padding: 4px;
@@ -118,10 +125,12 @@ aside a {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     position: absolute;
    
     /* background-color: #44444444; */
-    width: 90%;
+    /* width: 90%; */
     margin-top: 100px;
     /* margin-left: 100px; */
     height: 200vh;
@@ -133,8 +142,9 @@ main img {
     border-style: solid;
     /* border-width: 10px; */
     border-color: var(--bgcolor);
-    border-radius: 3px;
-    box-shadow: 11px 7px 0 var(--bgcolor), 12px 8px var(--accentcolor) ;
+    border-radius: 0 0 3px 0;
+    box-shadow: 11px 7px 0 var(--bgcolor), 12px 8px var(--accentcolor), 16px 16px 10px var(--shadowcolor) ;
+    /* box-shadow:  10px 10px 10px #090913; */
 }
 main p {
     margin-left: 180px;
@@ -142,6 +152,13 @@ main p {
 }
 
 h1 {
+    /* width: auto; */
+    margin-left: 400px;
+    font-weight: 200;
+
+}
+
+h2 {
     margin-left: 160px;
     font-weight: 200;
 }
@@ -154,5 +171,32 @@ h1 {
 
 #projects {
     margin-top: 50vh;
+}
+
+.project {
+    position: relative;
+    /* display: flex; */
+    /* background-color: var(--maincolor); */
+}
+.project div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 60px;
+    top: 100px;
+    right: -50px;
+    background-color: var(--bgcolor);
+    border-style: solid;
+    border-width: 1px ;
+    border-color: var(--accentcolor);
+    border-radius: 6px 6px 6px 6px;
+    padding: 10px;
+    box-shadow:  10px 10px 10px var(--shadowcolor);
+    
+    z-index: 1;
+}
+.project div a {
+    font-size: 80%;
+    /* margin: 20px; */
 }
 
