@@ -52,12 +52,26 @@ span {
 nav {
     position: absolute;
     padding: 20px;
-    font-family: "Courier" ;
+    /* font-family: "Courier" ; */
     /* text-align: right; */
     right: 0;
     /* background-color: #111111; */
     /* width: 100vw; */
     /* font-weight: 200; */
+}
+nav a {
+    margin-right: 10px;
+    
+}
+
+a {
+    transition: all 0.2s;
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    transition: all 0.5s;
+    color: var(--accentcolor);
 }
 #left, #right {
     transition: all 0.5s;
@@ -65,6 +79,7 @@ nav {
     top: 45vh;
     display: flex;
     flex-direction: column;
+    z-index: 1;
     
 }
 
@@ -87,9 +102,11 @@ nav {
     border-color: var(--accentcolor);
     border-radius: 6px;
 }
-aside i {
+aside a {
     padding: 4px;
+    /* color: var(--accentcolor); */
 }
+
 
 .v-stripe {
     position: relative;
@@ -106,7 +123,7 @@ main {
     /* background-color: #44444444; */
     width: 90%;
     margin-top: 100px;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     height: 200vh;
 }
 
@@ -129,10 +146,6 @@ h1 {
     font-weight: 200;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
 
 #about {
     margin-top: 50vh;
