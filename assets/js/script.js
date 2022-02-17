@@ -1,5 +1,7 @@
 const header = document.getElementsByTagName("header")[0];
-const links = document.getElementsByTagName("aside")[0];
+const links = document.getElementById("left");
+const about = document.getElementById("about");
+const projects = document.getElementById("projects");
 
 
 
@@ -36,7 +38,7 @@ function moveHeader() {
         furthestDown = window.scrollY;
         header.style.top = null;
     }
-    console.log(window.scrollY, furthestDown);
+    // console.log(projects.offsetTop, window.scrollY);
     links.style.top = `${height}vh`;
     if (window.scrollY < 60) {
         header.style.top = null;
@@ -46,5 +48,16 @@ function moveHeader() {
     // else {
     //     header.style.top = null;
     // }
+    if (projects.offsetTop-window.innerHeight/4 <= window.scrollY) {
+        console.log("project");
+        about.style.marginTop = "-100px";
+    }
+    else {
+        about.style.marginTop = null;
+    }
     
 }
+
+
+
+// projects.style.marginTop = "0";

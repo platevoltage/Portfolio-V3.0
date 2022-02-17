@@ -59,7 +59,7 @@ nav {
     /* width: 100vw; */
     /* font-weight: 200; */
 }
-aside {
+#left, #right {
     transition: all 0.5s;
     position: fixed;
     top: 45vh;
@@ -68,7 +68,13 @@ aside {
     
 }
 
-aside section{
+#right {
+    
+    top: 0;
+    right: 20px;
+}
+
+#left section{
     display: flex;
     flex-direction: column;
     
@@ -121,5 +127,19 @@ main p {
 h1 {
     margin-left: 160px;
     font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#about {
+    margin-top: 50vh;
+    transition: all 0.5s;
+}
+
+#projects {
+    margin-top: 50vh;
 }
 
