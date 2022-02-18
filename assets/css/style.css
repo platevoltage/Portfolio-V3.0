@@ -8,8 +8,9 @@
 /* * {
     
 } */
-section {
+#right {
     /* border: 1px solid #55555522; */
+    /* text-align: right; */
 }
 
 
@@ -87,6 +88,23 @@ a:hover {
     transition: all 0.5s;
     color: var(--accentcolor);
 }
+
+button {
+    transition: all .1s;
+    background-color: var(--bgcolortransparent);
+    border: 1px solid var(--accentcolor);
+    border-radius: 5px;
+    color: var(--accentcolor);
+    padding: 10px;
+    box-shadow:  2px 2px 8px var(--shadowcolor);
+    font-size: 80%;
+    font-weight: 200;
+}
+button:hover {
+    transition: all .5s;
+    color: var(--maincolor);
+}
+
 #left, #right {
     transition: all 0.5s;
     position: fixed;
@@ -149,19 +167,29 @@ main {
     height: 200vh;
 }
 
-main img {
-    margin-left: 50px;
-    width: 500px;
-    border-style: solid;
+.img-frame {
+    width: 560px;
+        border-style: solid;
     /* border-width: 10px; */
     border-color: var(--bgcolor);
     border-radius: 0 0 3px 0;
     box-shadow: 11px 7px 0 var(--bgcolor), 12px 8px var(--accentcolor), 16px 16px 10px var(--shadowcolor) ;
+}
+
+main img {
+    margin-left: 50px;
+    width: 500px;
+
     /* box-shadow:  10px 10px 10px #090913; */
 }
 main p {
     margin-left: 20px;
     width: 540px;
+}
+main button {
+    position: relative;
+    left: 200px;
+    margin-left: 20px;
 }
 
 h1 {
@@ -190,6 +218,7 @@ h1 {
     left: 60px;
 }
 
+
 h2 {
     margin-left: 160px;
     font-weight: 200;
@@ -207,25 +236,38 @@ h2 {
 }
 
 #intro-indicator {
+    text-align: right;
+    margin-right: 10px;
     margin-top: 50vh;
     /* margin-top: -100px; */
     transition: all 0.5s;
 }
 #about-indicator {
-    margin-top: 50vh;
+    margin-right: 10px;
+    text-align: right;
+    margin-top: 60vh;
     transition: all 0.5s;
 }
 
 #projects-indicator {
-    margin-top: 50vh;
+    margin-top: 60vh;
 }
+
 
 .project {
     position: relative;
     /* display: flex; */
     /* background-color: var(--maincolor); */
 }
-.project div {
+.project img {
+    transition: all 0.3s;
+    filter: grayscale(1);
+}
+.project img:hover {
+    transition: all 1s;
+    filter: grayscale(0);
+}
+/* .project div {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -240,7 +282,7 @@ h2 {
     box-shadow:  10px 10px 10px var(--shadowcolor);
     
     z-index: 1;
-}
+} */
 .project div a {
     font-size: 80%;
     /* margin: 20px; */
