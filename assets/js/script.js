@@ -1,8 +1,11 @@
 const header = document.getElementsByTagName("header")[0];
 const links = document.getElementById("left");
+const introIndicator = document.getElementById("intro-indicator");
+const aboutIndicator = document.getElementById("about-indicator");
 const about = document.getElementById("about");
+const projectsIndicator = document.getElementById("projects-indicator");
 const projects = document.getElementById("projects");
-const projectsAnchor = document.getElementById("projects-anchor");
+
 
 
 
@@ -55,12 +58,24 @@ function moveHeader() {
     // else {
     //     header.style.top = null;
     // }
-    if (projectsAnchor.offsetTop-window.innerHeight/4 <= window.scrollY) {
-        console.log("project");
-        about.style.marginTop = "-100px";
+    
+    if (about.offsetTop-window.innerHeight/4 <= window.scrollY) {
+        console.log("about");
+        introIndicator.style.marginTop = "-100px";
+        // about.style.marginTop = null;
     }
     else {
-        about.style.marginTop = null;
+        introIndicator.style.marginTop = null;
+    }
+    if (projects.offsetTop-window.innerHeight/4 <= window.scrollY) {
+        console.log("project");
+        
+        aboutIndicator.style.marginTop = "-100px";
+    }
+    else {
+        aboutIndicator.style.marginTop = null;
+        // 
+        
     
     }
     
