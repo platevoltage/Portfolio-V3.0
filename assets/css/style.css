@@ -89,18 +89,19 @@ a:hover {
     color: var(--accentcolor);
 }
 
-button {
+main a {
     transition: all .1s;
     background-color: var(--bgcolortransparent);
     border: 1px solid var(--accentcolor);
     border-radius: 5px;
     color: var(--accentcolor);
     padding: 10px;
+    margin-left: 30px;
     box-shadow:  2px 2px 8px var(--shadowcolor);
     font-size: 80%;
     font-weight: 200;
 }
-button:hover {
+main a:hover {
     transition: all .5s;
     color: var(--maincolor);
 }
@@ -162,9 +163,10 @@ main {
     /* background-color: #44444444; */
     /* width: 600px; */
     margin-top: 100px;
+    padding-bottom: 100px;
     /* padding-left: 100px; */
     /* margin-left: 100px; */
-    height: 200vh;
+    /* height: 200vh; */
 }
 
 .img-frame {
@@ -256,12 +258,13 @@ h2 {
 
 .project {
     position: relative;
+    margin-bottom: 100px;
     /* display: flex; */
     /* background-color: var(--maincolor); */
 }
 .project img {
     transition: all 0.3s;
-    filter: grayscale(1);
+    filter: grayscale(.96);
 }
 .project img:hover {
     transition: all 1s;
