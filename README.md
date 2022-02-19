@@ -2,7 +2,7 @@
 
 ## https://antieatingactivist.github.io/Portfolio-V3.0/
 
-This is the 2nd candidate for my professional portfolio. It makes use of perspective and uses javascript to alter the point of view according to window size and scroll point. It makes heavy use of animations and transitions.
+This is the 3rd candidate for my professional portfolio. It makes use of perspective and uses javascript to alter the point of view according to window size and scroll point. It makes heavy use of animations and transitions.
 
 
 
@@ -34,13 +34,13 @@ This is the 2nd candidate for my professional portfolio. It makes use of perspec
 
 ## Deployed Link
 
-* [https://antieatingactivist.github.io/Portfolio-V2.0/](https://antieatingactivist.github.io/Portfolio-V2.0/)
+* [https://antieatingactivist.github.io/Portfolio-V3.0/](https://antieatingactivist.github.io/Portfolio-V3.0/)
 
 
 ## Authors
 
 Garrett Corbin
 
-- [https://antieatingactivist.github.io/Portfolio-V2.0/](https://antieatingactivist.github.io/Portfolio-V2.0/)
+- [https://antieatingactivist.github.io/Portfolio-V3.0/](https://antieatingactivist.github.io/Portfolio-V3.0/)
 - [https://github.com/antieatingactivist/](https://github.com/)
 - [https://www.linkedin.com/in/garrett-corbin-7a7777227/](https://www.linkedin.com/)
