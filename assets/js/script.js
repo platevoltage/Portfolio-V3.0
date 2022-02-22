@@ -10,6 +10,7 @@ const projects = document.getElementById("projects");
 
 
 
+
 links.style.transition = "none";
 header.style.transition = "none";
 links.style.top = "100vh";
@@ -19,6 +20,8 @@ header.style.transition = "all 2s";
 header.style.boxShadow = "none";
 header.style.backgroundColor = "#00000000";
 header.style.border = "none";
+about.style.opacity = 0;
+projects.style.opacity = 0;
 
 
 setTimeout(function() {
@@ -62,18 +65,26 @@ function moveHeader() {
     if (about.offsetTop-window.innerHeight/4 <= window.scrollY) {
         console.log("about");
         introIndicator.style.marginTop = "-100px";
+        about.style.transition = null;
+        about.style.opacity = null;
         // about.style.marginTop = null;
     }
     else {
         introIndicator.style.marginTop = null;
+        about.style.transitionDuration = ".5s";
+        about.style.opacity = 0;
     }
     if (projects.offsetTop-window.innerHeight/4 <= window.scrollY) {
         console.log("project");
+        projects.style.transition = null;
+        projects.style.opacity = null;
         
         aboutIndicator.style.marginTop = "-100px";
     }
     else {
         aboutIndicator.style.marginTop = null;
+        projects.style.transitionDuration = ".5s";
+        projects.style.opacity = 0;
         // 
         
     
