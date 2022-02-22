@@ -5,28 +5,15 @@
     --accentcolor: #8c4040;
     --shadowcolor: #03050c;
 }
-/* * {
-    
-} */
-
-#right {
-    /* border: 1px solid #55555522; */
-    /* text-align: right; */
-}
-
 
 body {
-    /* display: flex; */
-    /* justify-content: center; */
     margin: 0;
-    /* margin-left: 100px; */
     position: relative;
     background-color: var(--bgcolor);
     color: var(--maincolor);
     font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
     font-weight: 200;
-    height: 100%;
-      
+    height: 100%;  
 }
 
 header {
@@ -35,47 +22,32 @@ header {
     display: flex;
     top: 0px;
     left: 0px;
-    /* position: fixed;          */
     width: 100%;
     height: 60px;
     background-color: var(--bgcolortransparent);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    /* border: 1px solid 1px 1px var(--accentcolor); */
     border-style: solid;
     border-width: 0 0 1px 0;
     border-color: var(--accentcolor);
-
     box-shadow:  10px 10px 10px var(--shadowcolor);
-
-
     z-index: 10;
 }
 
 header div {
-    /* position: fixed; */
     padding: 10px;
-
-    /* width: 40%; */
     white-space: nowrap;
-    /* background-color: #111111; */
     font-size: 20px;
 }
 
 span {
-    color: var(--accentcolor);
-    
+    color: var(--accentcolor);  
 }
 
 nav {
     position: absolute;
     padding: 20px;
-    /* font-family: "Courier" ; */
-    /* text-align: right; */
     right: 0;
-    /* background-color: #111111; */
-    /* width: 100vw; */
-    /* font-weight: 200; */
 }
 nav a {
     margin-right: 10px;
@@ -120,12 +92,10 @@ main a:hover {
 }
 
 #left {
-    left: 0;
-    
+    left: 0; 
 }
 
-#right {
-    
+#right { 
     top: 0;
     right: 20px;
 }
@@ -133,11 +103,8 @@ main a:hover {
 #left section{
     display: flex;
     flex-direction: column;
-    /* width: 36px; */
     font-size: 25px;
-    
     margin-left: 16px;
-    /* background-color: var(--bgcolor); */
     border-style: solid;
     border-width: 1px ;
     border-color: var(--accentcolor);
@@ -146,29 +113,21 @@ main a:hover {
 }
 aside a {
     padding: 4px;
-    /* color: var(--accentcolor); */
 }
 
 
 #v-stripe {
-    /* background-color: #000000; */
     position: relative;
     display: block;
-    /* overflow:hidden; */
     width: 2px;
     height: calc(66vh);
     left: 32px;
-    
-    /* top: 50vh; */
     bottom: 0;
     z-index: 100;
     border-style: solid;
     border-width: 0 0 2px 2px;
-    /* border-width: 2px; */
     border-color: var(--accentcolor);
-    border-radius: 0 6px 6px 6px;
-    /* box-shadow:  10px 10px 10px var(--shadowcolor); */
-   
+    border-radius: 0 6px 6px 6px;   
 }
 
 main {
@@ -176,20 +135,12 @@ main {
     flex-direction: column;
     position: relative;
     margin-left: 100px; 
-    /* background-color: #44444444; */
-    /* width: 600px; */
     margin-top: 100px;
-    /* padding-bottom: 100px; */
-    /* padding-left: 100px; */
-    /* margin-left: 100px; */
-    /* height: 200vh; */
- 
 }
 
 .img-frame {
     width: 560px;
-        border-style: solid;
-    /* border-width: 10px; */
+    border-style: solid;
     border-color: var(--bgcolor);
     border-radius: 0 0 3px 0;
     box-shadow: 11px 7px 0 var(--bgcolor), 12px 8px var(--accentcolor), 16px 16px 10px var(--shadowcolor) ;
@@ -198,8 +149,6 @@ main {
 main img {
     margin-left: 50px;
     width: 500px;
-
-    /* box-shadow:  10px 10px 10px #090913; */
 }
 main p {
     margin-left: 20px;
@@ -212,11 +161,8 @@ main button {
 }
 
 h1 {
-    /* width: auto; */
-    /* background-color: #000000; */
     margin: 10px;
     font-size: 60px;
-    /* margin-left: 400px; */
     font-weight: 300;
 
 }
@@ -225,7 +171,6 @@ h1 {
     position: relative;
     top: -50px;
     left: 50px;
-    /* background-color: #000000; */
     font-size: 70%;
     white-space: nowrap;
     
@@ -260,7 +205,6 @@ h2 {
     text-align: right;
     margin-right: 10px;
     margin-top: 50vh;
-    /* margin-top: -100px; */
     transition: all 0.5s;
 }
 #about-indicator {
@@ -278,8 +222,6 @@ h2 {
 .project {
     position: relative;
     margin-bottom: 100px;
-    /* display: flex; */
-    /* background-color: var(--maincolor); */
 }
 .project img {
     transition: all 0.3s;
@@ -289,25 +231,9 @@ h2 {
     transition: all 1s;
     filter: grayscale(0);
 }
-/* .project div {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 60px;
-    top: 100px;
-    background-color: var(--bgcolor);
-    border-style: solid;
-    border-width: 1px ;
-    border-color: var(--accentcolor);
-    border-radius: 6px 6px 6px 6px;
-    padding: 10px;
-    box-shadow:  10px 10px 10px var(--shadowcolor);
-    
-    z-index: 1;
-} */
+
 .project div a {
     font-size: 80%;
-    /* margin: 20px; */
 }
 
 #bottom {
@@ -321,11 +247,8 @@ h2 {
 #h-stripe {
     border-style: solid;
     border-width: 0 0 2px 2px;
-    /* border-width: 2px; */
     border-color: var(--accentcolor);
     border-radius: 0 6px 6px 6px;
     height: 10px;
-
-
 }
 

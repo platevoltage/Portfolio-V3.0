@@ -7,10 +7,6 @@ const projectsIndicator = document.getElementById("projects-indicator");
 const projects = document.getElementById("projects");
 
 
-
-
-
-
 links.style.transition = "none";
 header.style.transition = "none";
 links.style.top = "100vh";
@@ -29,8 +25,7 @@ setTimeout(function() {
     links.style.transition = "none";
     links.style.top = null;
     header.style.top = null;
-    window.onscroll = moveHeader;
-    
+    window.onscroll = moveHeader;  
 }, 100);
 
 var furthestDown = 0;
@@ -47,7 +42,6 @@ function moveHeader() {
         furthestDown = window.scrollY;
         header.style.top = null;
     }
-    // console.log(projects.offsetTop, window.scrollY);
     links.style.top = `${height}vh`;
     if (window.scrollY < 60) {
         
@@ -57,17 +51,12 @@ function moveHeader() {
     }
     if (window.scrollY < 140) {
         header.style.top = null;
-    }
-    // else {
-    //     header.style.top = null;
-    // }
-    
+    }   
     if (about.offsetTop-window.innerHeight/4 <= window.scrollY) {
         console.log("about");
         introIndicator.style.marginTop = "-100px";
         about.style.transition = null;
         about.style.opacity = null;
-        // about.style.marginTop = null;
     }
     else {
         introIndicator.style.marginTop = null;
@@ -85,13 +74,8 @@ function moveHeader() {
         aboutIndicator.style.marginTop = null;
         projects.style.transitionDuration = ".5s";
         projects.style.opacity = 0;
-        // 
-        
-    
+
     }
     
 }
 
-
-
-// projects.style.marginTop = "0";
