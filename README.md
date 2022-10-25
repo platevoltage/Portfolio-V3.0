@@ -36,7 +36,7 @@ window.onscroll = moveHeader;
 
 ## Deployed Link
 
-* [https://antieatingactivist.github.io/Portfolio-V3.0/](https://antieatingactivist.github.io/Portfolio-V3.0/)
+* [https://platevoltage.github.io/Portfolio-V3.0/](https://platevoltage.github.io/Portfolio-V3.0/)
 
 
 ## Authors
