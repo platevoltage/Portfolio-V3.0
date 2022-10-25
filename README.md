@@ -1,6 +1,6 @@
 # Portfolio-V3.0
 
-## https://antieatingactivist.github.io/Portfolio-V3.0/
+## https://platevoltage.github.io/Portfolio-V3.0/
 
 This is the 3rd candidate for my professional portfolio. I went with more of a stripped down professional look this time. The nav bar auto hides when scrolling down and reappears when the user starts scrolling back up. The content is stored statically inside the HTML file and is supplimented with Javascript and CSS for styling and animations.
 
@@ -43,6 +43,6 @@ window.onscroll = moveHeader;
 
 Garrett Corbin
 
-- [https://antieatingactivist.github.io/Portfolio-V3.0/](https://antieatingactivist.github.io/Portfolio-V3.0/)
-- [https://github.com/antieatingactivist/](https://github.com/)
+- [https://platevoltage.github.io/Portfolio-V3.0/](https://antieatingactivist.github.io/Portfolio-V3.0/)
+- [https://github.com/platevoltage/](https://github.com/)
 - [https://www.linkedin.com/in/garrett-corbin-7a7777227/](https://www.linkedin.com/)
